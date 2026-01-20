@@ -1,48 +1,245 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>it's me Ashif</title>
-  <link rel="icon" href="images\worker.ico">
+  <title>It's me Ashif</title>
+  <link rel="icon" href="images/worker.ico">
+  <link rel="stylesheet" href="web.css">
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Montserrat&display=swap" rel="stylesheet">
 </head>
-<link rel="stylesheet" href="web.css">
-<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 
 <body>
-  <div class="top-container">
-    <img class="boy" src="images\PngItem_4256799.png" alt="cloud-image">
-    <h1>I'm Ashif.</h1>
-    <h3>a <span style="text-decoration:underline">pro</span>grammer.</h3>
-    <img class="mountain" src="images\pngegg (1).png" alt="mountain-image">
-  </div>
-  <div class="middle-container">
-    <div class="profile">
-      <img id="profile-pic" src="images\ashif-pic.jpg" alt="ashif-pic">
-      <h2>Hello.</h2>
-      <p>I'm self-taught programmer.I ❤️ coffee</p>
-    </div>
-    <hr>
-    <div class="skills">
-      <h2>My Skills.</h2>
-      <div class="skill-row">
-        <img class="" src="images\coding-icon.png" alt="coding-icon">
-        <p>I will update this section soon , as skills are under devoloping now.</p>
-        <hr>
-        <div class="contact-me">
-          <h2>Get In Touch</h2>
-          <p class="last">You got anything to tell me?Like any suggestion or an offer?😉.</p>
-          <a class="btn" href="mailto:pashif2002@gmail.com">CONTACT ME</a>
-        </div>
-      </div>
-      <div class="bottom-container">
-        <a href="https://www.linkedin.com/in/ashif-panthalookaran/">LinkedIn</a>
-        <a href="https://github.com/azhiif">Github</a>
-        <a href="https://www.instagram.com/azhiif/">Instagram</a>
 
-        <p id="credit">© 2021 Ashif P</p>
-      </div>
+<button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+<!-- HERO -->
+<div class="top-container">
+  <img class="boy" src="images/PngItem_4256799.png" alt="boy">
+  <h1>I'm Ashif.</h1>
+  <h3>a <span class="underline">pro</span>grammer.</h3>
+  <img class="mountain" src="images/pngegg (1).png" alt="mountain">
+</div>
+
+<!-- ABOUT -->
+<div class="middle-container section">
+  <div class="profile">
+    <img id="profile-pic" src="images/ashif-pic.jpg" alt="ashif">
+    <h2>Hello 👋</h2>
+    <p class="intro">
+      I’m a <strong>Java Full Stack Developer</strong> who enjoys building real-world applications —
+      from backend APIs to smooth user interfaces.
+      I care about clean logic, scalability, and solving problems that actually matter.
+      Fuelled by coffee ☕ and curiosity.
+    </p>
+  </div>
+</div>
+
+<hr>
+
+
+<div class="skills section">
+  <h2>Skills & Technologies</h2>
+
+  <!-- PRIMARY SKILLS -->
+  <div class="skill-group">
+    <h3>🔥 Primary Skills</h3>
+
+    <div class="skill-card">
+      <h4>Frontend Development</h4>
+      <p>
+        HTML5, CSS3, SASS / SCSS<br>
+        Bootstrap, Tailwind CSS, Chakra UI, Material CSS<br>
+        JavaScript (ES6+), React, JSX, Next.js, Formik
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <h4>Backend Development</h4>
+      <p>
+        Java, Spring, Spring Boot, J2EE<br>
+        REST API Development, Authentication<br>
+        Flask, FastAPI
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <h4>Databases & APIs</h4>
+      <p>
+        MySQL, PostgreSQL, SQLite<br>
+        Supabase, Firebase<br>
+        XAMPP, phpMyAdmin, MySQL Workbench<br>
+        Postman, Swagger
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <h4>Version Control</h4>
+      <p>
+        Git, GitHub, GitLab
+      </p>
+    </div>
+  </div>
+
+  <!-- SECONDARY SKILLS -->
+  <div class="skill-group">
+    <h3>⚡ Secondary Skills</h3>
+
+    <div class="skill-card secondary">
+      <h4>JavaScript Ecosystem</h4>
+      <p>
+        TypeScript, Webpack, Babel<br>
+        Unit Testing, Linting
+      </p>
+    </div>
+
+    <div class="skill-card secondary">
+      <h4>Software Engineering</h4>
+      <p>
+        SDLC, Agile Methodology<br>
+        Clean Code Practices
+      </p>
+    </div>
+
+    <div class="skill-card secondary">
+      <h4>Data & Analytics</h4>
+      <p>
+        Seaborn, Matplotlib<br>
+        Power BI
+      </p>
+    </div>
+
+    <div class="skill-card secondary">
+      <h4>DevOps & Cloud</h4>
+      <p>
+        CI/CD, Jenkins, Docker, GitHub Actions<br>
+        Firebase, Vercel, AWS, Render, Railway
+      </p>
+    </div>
+
+    <div class="skill-card secondary">
+      <h4>Caching & NoSQL</h4>
+      <p>
+        Queues, Cron Jobs, Memory Cache<br>
+        MongoDB, MongoDB Compass
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<hr>
+
+<!-- PROJECTS -->
+<div class="section">
+  <h2>Projects I’ve Built</h2>
+
+  <div class="project-card">
+    <h3>🚗 Voiture.in — Vehicle Listing Platform</h3>
+    <p>
+      A full-stack web platform where users can list, browse, and search vehicles.
+      I built this to understand how real marketplaces handle authentication,
+      data security, and performance.
+    </p>
+    <p class="tech">
+      <strong>Tech:</strong> React, Supabase (SQL), Authentication
+    </p>
+  </div>
+
+  <div class="project-card">
+    <h3>🎵 Concert Booking Application</h3>
+    <p>
+      A complete event booking system allowing users to explore concerts,
+      book seats, and manage reservations.
+      This project helped me learn end-to-end flow: frontend → backend → database.
+    </p>
+    <p class="tech">
+      <strong>Tech:</strong> React, Node.js, REST APIs
+    </p>
+  </div>
+
+  <div class="project-card">
+    <h3>🛡️ Agetic AI Pentesting</h3>
+    <p>
+      An AI-assisted penetration testing concept designed to automate
+      vulnerability discovery and reporting.
+      Focused on how AI can assist security engineers, not replace them.
+    </p>
+    <p class="tech">
+      <strong>Tech:</strong> AI Workflows, Security Automation
+    </p>
+  </div>
+
+  <div class="project-card">
+    <h3>🤖 College HelpDesk Bot</h3>
+    <p>
+      A Java-based chatbot system designed to answer student academic and
+      campus-related queries.
+      Includes admin controls to update responses dynamically.
+    </p>
+    <p class="tech">
+      <strong>Tech:</strong> Java, MySQL, Bootstrap
+    </p>
+  </div>
+
+  <div class="project-card">
+    <h3>🩺 Diabetic Retinopathy Detection</h3>
+    <p>
+      A deep learning project that classifies retinal images to detect
+      different stages of diabetic retinopathy.
+      This strengthened my understanding of ML pipelines and evaluation metrics.
+    </p>
+    <p class="tech">
+      <strong>Tech:</strong> Python, InceptionV3, Deep Learning
+    </p>
+  </div>
+
+  <div class="project-card">
+    <h3>🌐 Odux.vercel.app</h3>
+    <p>
+      A modern web application deployed on Vercel,
+      focusing on clean UI, fast performance, and real-world deployment practices.
+    </p>
+    <p class="tech">
+      <strong>Tech:</strong> Next.js, Tailwind, Vercel
+    </p>
+  </div>
+</div>
+
+<hr>
+
+<!-- CONTACT -->
+<div class="contact-me section">
+  <h2>Let’s Connect</h2>
+  <p class="last">
+    If you have an idea, feedback, or an opportunity — I’d love to hear it 🙂
+  </p>
+  <a class="btn" href="mailto:pashif2002@gmail.com">CONTACT ME</a>
+</div>
+
+<!-- FOOTER -->
+<div class="bottom-container">
+  <a href="https://www.linkedin.com/in/ashifp/">LinkedIn</a>
+  <a href="https://github.com/azhiif">GitHub</a>
+  <a href="https://www.instagram.com/_.aashiff/">Instagram</a>
+  <p id="credit">© 2026 Ashif P</p>
+</div>
+
+<!-- JS -->
+<script>
+  const sections = document.querySelectorAll('.section');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+  sections.forEach(s => observer.observe(s));
+
+  function toggleTheme() {
+    document.body.classList.toggle('dark');
+  }
+</script>
 
 </body>
-
 </html>
